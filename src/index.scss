@@ -1,0 +1,48 @@
+$pink: #fce5e9;
+$grey: #e0dede;
+
+body {
+  background-color:$grey;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif; 
+  margin: 0px;
+}
+
+.container {
+  width: 80%;
+  height:100vh;
+  background-color: $pink;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+    h1 {
+      text-align: center;
+      padding: 1.5em;
+    }
+}
+.input-part {
+  width: 100%;
+}
+
+.list {
+  width: 80%;
+  display: flex;
+  align-items: center;  
+  justify-content:space-between;
+  background-color: #ead3d7;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+    .title-list {
+      font-size: 1.5em;
+      margin-left: 20px;
+    }
+
+    .icons {
+      display: flex;
+      justify-content:space-between;
+    }
+}

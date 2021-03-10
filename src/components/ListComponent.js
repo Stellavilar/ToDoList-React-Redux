@@ -7,7 +7,7 @@ function ListComponent() {
     return (
         <div className="items">
             {todos.map(todo => {
-                return <ItemComponent key={todo.id}/>
+                return <ItemComponent key={todo.id} todo={todo}/>
             })}
         </div>
     )

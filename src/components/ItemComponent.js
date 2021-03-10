@@ -3,11 +3,11 @@ import CreateIcon from '@material-ui/icons/Create';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { IconButton } from '@material-ui/core';
 
-function ItemComponent() {
+function ItemComponent({ todo }) {
     return (
         <div className="list">
             <div className="title-list">
-                To Do title
+                {todo.name}
             </div>
             <div className="icons">
                 <IconButton>

@@ -1,22 +1,14 @@
 import React from 'react';
-import CreateIcon from '@material-ui/icons/Create';
-import DeleteIcon from '@material-ui/icons/Delete';
-import { IconButton } from '@material-ui/core';
+import ItemComponent from './ItemComponent';
+import { useSelector } from 'react-redux';
 
 function ListComponent() {
+    let todos = useSelector(state => state)
     return (
-        <div className="list">
-            <div className="title-list">
-                To Do title
-            </div>
-            <div className="icons">
-                <IconButton>
-                    <CreateIcon />
-                </IconButton>
-                <IconButton>
-                    <DeleteIcon />                
-                </IconButton>   
-            </div>
+        <div className="items">
+            {todos.map(todo => {
+                return <ItemComponent key={todo.id}/>
+            })}
         </div>
     )
 };

@@ -8,7 +8,6 @@ function App() {
       <h1>To Do List App</h1>
       <InputComponent />
       <ListComponent />
-      <ListComponent />
     </div>
   );
 }

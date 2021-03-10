@@ -23,12 +23,17 @@ body {
       padding: 1.5em;
     }
 }
+
 .input-part {
   width: 100%;
 }
+.items {
+  width: 80%;
+  align-self: center;
+}
 
 .list {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;  
   justify-content:space-between;

@@ -3,6 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import {addTodo} from '../redux/actions';
 import { useDispatch } from 'react-redux';
+import { v1 as uuid } from 'uuid';
 
 //Styles for material ui components
 const useStyles = makeStyles((theme) => ({
@@ -34,7 +35,7 @@ function InputComponent () {
                     e.preventDefault();
                     dispatch(addTodo(
                         {
-                            id: 34,
+                            id: uuid(),
                             name: item
                         }
                 ))

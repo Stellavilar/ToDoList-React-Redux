@@ -22,9 +22,9 @@ const useStyles = makeStyles((theme) => ({
 function InputComponent () {
     //Classes for material ui components
     const classes = useStyles();
+    //Use dispatch to get actions
     const dispatch = useDispatch();
-
-    //input value
+    //input value hook
     const [ item, setItem ] = useState('');
 
     return (

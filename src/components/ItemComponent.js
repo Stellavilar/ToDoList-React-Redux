@@ -7,8 +7,8 @@ import { deleteTodo, updateTodo } from '../redux/actions';
 import { useDispatch } from 'react-redux';
 
 function ItemComponent({ todo }) {
+    //Use dispatch to get actions 
     const dispatch = useDispatch();
-
     //Edit items
     const [ edit, setEdit ] = useState(false);
     //Change edit input

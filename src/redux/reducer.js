@@ -5,10 +5,12 @@ import  {todos}  from './states'
 export const reducer = (state = todos, action) => {
     let newTodos;
     switch (action.type) {
+        /**When submit input, add todo into array and show them on list */
         case ADD_TODO:
             newTodos = [...state];
             newTodos.push(action.payload);
             return newTodos;
+            /**When delete todo, filter todos array to remove element*/
         case DELETE_TODO:
             newTodos = [...state];
             newTodos = newTodos.filter(todo=> todo.id !== action.payload)
@@ -26,7 +28,6 @@ export const reducer = (state = todos, action) => {
                 newTodos[index] = action.payload;
                 return newTodos;
             }
-        // break;
         return state;
     }
 

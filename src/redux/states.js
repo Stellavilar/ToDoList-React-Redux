@@ -1,4 +1,4 @@
-export let todos = [
+export const todos = [
     { 
         id: 1,
         name: "One",

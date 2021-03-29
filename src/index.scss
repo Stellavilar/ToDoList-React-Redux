@@ -25,6 +25,17 @@ body {
 
 .input-part {
   width: 100%;
+
+  .MuiPaper-elevation1 {
+    box-shadow: none;
+  }
+
+  form {
+    display: flex;
+  }
+}
+.MuiCardContent-root{
+  background-color: $pink;
 }
 .items {
   width: 80%;
